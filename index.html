@@ -4,103 +4,23 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Rayssa ❤️ Júnior</title>
-
 <style>
-*{
-margin:0;
-padding:0;
-box-sizing:border-box;
-font-family:Arial,sans-serif;
-}
-
-body{
-background:#0f0f0f;
-color:white;
-overflow-x:hidden;
-}
-
-section{
-min-height:100vh;
-display:flex;
-flex-direction:column;
-justify-content:center;
-align-items:center;
-padding:30px;
-text-align:center;
-}
-
-.hero{
-background:linear-gradient(135deg,#111,#1f1f1f);
-}
-
-h1{
-font-size:3rem;
-margin-bottom:15px;
-}
-
-h2{
-margin-bottom:20px;
-}
-
-p{
-max-width:700px;
-line-height:1.8;
-}
-
-.btn{
-margin-top:20px;
-padding:12px 25px;
-border:none;
-border-radius:30px;
-background:white;
-color:black;
-font-weight:bold;
-cursor:pointer;
-text-decoration:none;
-}
-
-.gallery{
-display:grid;
-grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
-gap:15px;
-width:100%;
-max-width:1000px;
-margin-top:30px;
-}
-
-.gallery img{
-width:100%;
-height:350px;
-object-fit:cover;
-border-radius:15px;
-transition:0.3s;
-}
-
-.gallery img:hover{
-transform:scale(1.03);
-}
-
-.counter{
-font-size:2rem;
-font-weight:bold;
-margin-top:20px;
-}
-
-.heart{
-position:fixed;
-color:red;
-animation:fall 8s linear infinite;
-opacity:.4;
-pointer-events:none;
-}
-
+*{margin:0;padding:0;box-sizing:border-box}
+body{font-family:Arial,sans-serif;background:#0b0b0b;color:#fff;scroll-behavior:smooth}
+section{min-height:100vh;display:flex;flex-direction:column;justify-content:center;align-items:center;padding:30px;text-align:center}
+.hero{background:linear-gradient(rgba(0,0,0,.65),rgba(0,0,0,.65)),url('fotos/eu e ela.jpg') center/cover}
+h1{font-size:3rem;margin-bottom:20px}
+h2{font-size:2rem;margin-bottom:20px;color:#f0d78c}
+p{max-width:700px;line-height:1.8;font-size:1.1rem}
+.btn{margin-top:25px;padding:14px 28px;background:#f0d78c;color:#000;text-decoration:none;border-radius:30px;font-weight:bold}
+.card{background:rgba(255,255,255,.06);backdrop-filter:blur(10px);padding:25px;border-radius:20px;max-width:800px}
+.photo{width:90%;max-width:420px;border-radius:20px;margin-bottom:25px;box-shadow:0 0 30px rgba(255,255,255,.15)}
+.counter{font-size:2rem;font-weight:bold}
+.final{background:linear-gradient(rgba(0,0,0,.7),rgba(0,0,0,.7)),url('fotos/foto1.jpg') center/cover}
+.heart{position:fixed;top:-20px;animation:fall linear infinite;color:#ff5a7a;pointer-events:none}
 @keyframes fall{
-0%{
-transform:translateY(-100px);
-}
-100%{
-transform:translateY(110vh);
-}
+from{transform:translateY(-50px)}
+to{transform:translateY(110vh)}
 }
 </style>
 </head>
@@ -108,145 +28,104 @@ transform:translateY(110vh);
 
 <section class="hero">
 <h1>❤️ Rayssa & Júnior ❤️</h1>
-
-<p>
-Uma pequena retrospectiva do nosso primeiro ano juntos.
-</p>
-
-<a class="btn" href="#inicio">
-Começar
-</a>
+<p>Uma pequena coleção dos momentos que fizeram esse primeiro ano valer a pena.</p>
+<a href="#inicio" class="btn">Começar nossa história</a>
 </section>
 
 <section id="inicio">
-<h2>O Começo</h2>
-
-<p>
-Toda história tem um começo.
-
-A nossa começou de uma forma simples,
-mas acabou se tornando uma das partes
-mais importantes da minha vida.
-</p>
-</section>
-
-<section>
-<h2>Dias de Luta</h2>
-
-<p>
-Nem todos os dias foram perfeitos.
-
-Mas cada desafio nos deixou mais fortes,
-mais unidos e mais certos de que vale a pena
-continuar escrevendo essa história juntos.
-</p>
-</section>
-
-<section>
-<h2>Dias de Glória</h2>
-
-<p>
-Entre risadas, conversas, passeios e momentos
-simples, criamos lembranças que jamais serão esquecidas.
-</p>
-</section>
-
-<section>
-<h2>Nossos Momentos 📸</h2>
-
-<div class="gallery">
-
-<!-- TROQUE AS FOTOS AQUI -->
-
-<img src="foto1.jpg">
-<img src="foto2.jpg">
-<img src="foto3.jpg">
-<img src="foto4.jpg">
-<img src="foto5.jpg">
-<img src="foto6.jpg">
-
+<div class="card">
+<h2>O Início</h2>
+<p>Existem pessoas que entram na nossa vida sem fazer barulho. E quando percebemos, elas já se tornaram uma das partes mais importantes dela. Em 22 de junho de 2025 começou oficialmente uma das melhores fases da minha vida.</p>
 </div>
 </section>
 
 <section>
-<h2>Nosso Primeiro Ano ❤️</h2>
+<img class="photo" src="fotos/foto do espelho.jpg">
+<div class="card">
+<h2>Nosso Lugar</h2>
+<p>Aos poucos fomos criando algo que não existe em lugar nenhum. Nosso próprio lugar. Feito de conversas, abraços, risadas e companhia.</p>
+</div>
+</section>
 
+<section>
+<img class="photo" src="fotos/foto da touca.jpg">
+<div class="card">
+<h2>As Pequenas Coisas</h2>
+<p>O amor não vive apenas nos grandes momentos. Ele mora nas brincadeiras, nas piadas internas e nos momentos que só fazem sentido para nós.</p>
+</div>
+</section>
+
+<section>
+<img class="photo" src="fotos/foto da cama.jpg">
+<div class="card">
+<h2>Dias de Luta, Dias de Glória</h2>
+<p>Tivemos dias bons. Tivemos dias difíceis. Mas em todos eles existiu algo que nunca mudou: nós.</p>
+<p style="margin-top:15px"><a class="btn" target="_blank" href="https://www.youtube.com/results?search_query=dias+de+luta+dias+de+gloria">🎵 Nossa Música</a></p>
+</div>
+</section>
+
+<section>
+<img class="photo" src="fotos/foto com filtro engraçado.jpg">
+<div class="card">
+<h2>As Risadas</h2>
+<p>Porque um relacionamento não é feito apenas de romance. É feito também das risadas sem motivo, das brincadeiras aleatórias e das memórias que ficam para sempre.</p>
+</div>
+</section>
+
+<section>
+<div class="card">
+<h2>Nosso Tempo Juntos ❤️</h2>
 <div class="counter" id="contador"></div>
+<p style="margin-top:20px">Cada segundo valeu a pena.</p>
+</div>
 </section>
 
-<section>
-<h2>Uma Música Para Nós 🎵</h2>
-
-<a class="btn"
-href="https://www.youtube.com/results?search_query=Charlie+Brown+Jr+Dias+de+Luta+Dias+de+Gloria"
-target="_blank">
-Ouvir Música
-</a>
-</section>
-
-<section>
+<section class="final">
+<div class="card">
 <h2>Para Você, Rayssa ❤️</h2>
-
 <p>
-Obrigado por cada momento.
-
-Obrigado pelas risadas.
-
-Obrigado pelas conversas.
-
-Obrigado por fazer parte da minha vida.
-
-Se esse primeiro ano foi tão especial,
-mal posso esperar para descobrir tudo
-o que ainda vamos viver juntos.
-
-Eu te amo.
+Obrigado por cada momento.<br><br>
+Obrigado por cada sorriso.<br><br>
+Obrigado por cada abraço.<br><br>
+Obrigado por existir na minha vida.<br><br>
+Se um único ano foi capaz de criar tantas lembranças, imagina o resto da nossa história.<br><br>
+Eu te amo.<br><br>
+— Júnior
 </p>
-
-<h1 style="margin-top:30px">
-❤️
-</h1>
-
-<p>
-Júnior
-</p>
+<br>
+<button class="btn" onclick="surpresa()">Clique aqui ❤️</button>
+<p id="msg"></p>
+</div>
 </section>
 
 <script>
+function atualizar(){
+const inicio = new Date('2025-06-22T00:00:00');
+const agora = new Date();
+const diff = agora - inicio;
+const dias = Math.floor(diff/(1000*60*60*24));
+const horas = Math.floor(diff/(1000*60*60));
+const minutos = Math.floor(diff/(1000*60));
+document.getElementById('contador').innerHTML =
+dias + " dias<br>" + horas + " horas<br>" + minutos + " minutos";
+}
+setInterval(atualizar,1000);
+atualizar();
 
-const dataInicio = new Date("2025-06-22");
-
-function atualizarContador(){
-
-const hoje = new Date();
-
-let diff = hoje - dataInicio;
-
-let dias = Math.floor(diff / (1000*60*60*24));
-
-document.getElementById("contador").innerHTML =
-dias + " dias juntos ❤️";
+function surpresa(){
+document.getElementById('msg').innerHTML =
+"<br>Quer continuar escrevendo essa história comigo? ❤️";
 }
 
-atualizarContador();
-
-for(let i=0;i<25;i++){
-
-let heart=document.createElement("div");
-
-heart.classList.add("heart");
-
-heart.innerHTML="❤";
-
-heart.style.left=Math.random()*100+"vw";
-
-heart.style.fontSize=(Math.random()*25+15)+"px";
-
-heart.style.animationDuration=(Math.random()*5+5)+"s";
-
-document.body.appendChild(heart);
+for(let i=0;i<40;i++){
+let h=document.createElement('div');
+h.className='heart';
+h.innerHTML='❤';
+h.style.left=Math.random()*100+'vw';
+h.style.animationDuration=(5+Math.random()*8)+'s';
+h.style.fontSize=(15+Math.random()*20)+'px';
+document.body.appendChild(h);
 }
-
 </script>
 
 </body>
